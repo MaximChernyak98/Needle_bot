@@ -20,11 +20,14 @@ x = client.market.market_candles_get(figi='BBG004S686W0', _from=t_from.isoformat
 y = client.market.market_search_by_figi_get(figi='BBG004S686W0')
 
 
-client.orders.orders_limit_order_post(broker_account_id=2010122667, figi='BBG004S686W0',
-                                          operation="buy", lots=1, price=2.4, limit_order_request=True)
+# order_response = client.orders.orders_limit_order_post(broker_account_id=2010122667, figi='BBG004S686W0',
+#                                                        limit_order_request={"lots": 1,
+#                                                                             "operation": "Buy",
+#                                                                             "price": 2.4})
 
 print(x)
 print(y)
+#print(order_response)
 
 
 

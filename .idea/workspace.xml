@@ -30,6 +30,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
   </component>
   <component name="RunManager">
     <configuration name="needle_bot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -70,25 +71,63 @@
       <option name="presentableId" value="Default" />
       <updated>1589395631999</updated>
     </task>
+    <task id="LOCAL-00001" summary="Добавил попытку добавления заявки">
+      <created>1589483043947</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1589483043947</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Добавил попытку добавления заявки" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил попытку добавления заявки" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1259" height="214" key="GridCell.Tab.0.bottom" timestamp="1589482939460">
+    <state x="420" y="91" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1589572008085">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="214" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589482939460" />
-    <state width="1259" height="214" key="GridCell.Tab.0.center" timestamp="1589482939460">
+    <state x="420" y="91" key="#com.intellij.ide.macro.MacrosDialog/0.0.1280.680@0.0.1280.680" timestamp="1589572008085" />
+    <state x="409" y="171" width="461" height="483" key="#com.intellij.tools.ToolEditorDialog" timestamp="1589572012678">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="214" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1589482939460" />
-    <state width="1259" height="214" key="GridCell.Tab.0.left" timestamp="1589482939460">
+    <state x="409" y="171" width="461" height="483" key="#com.intellij.tools.ToolEditorDialog/0.0.1280.680@0.0.1280.680" timestamp="1589572012678" />
+    <state x="297" y="0" key="CommitChangelistDialog2" timestamp="1589483043211">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="214" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1589482939460" />
-    <state width="1259" height="214" key="GridCell.Tab.0.right" timestamp="1589482939460">
+    <state x="297" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1589483043211" />
+    <state width="1259" height="149" key="GridCell.Tab.0.bottom" timestamp="1590340321010">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="214" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1589482939460" />
+    <state width="1259" height="149" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1590340321010" />
+    <state width="1259" height="149" key="GridCell.Tab.0.center" timestamp="1590340321010">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="149" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1590340321010" />
+    <state width="1259" height="149" key="GridCell.Tab.0.left" timestamp="1590340321010">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="149" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1590340321010" />
+    <state width="1259" height="149" key="GridCell.Tab.0.right" timestamp="1590340321010">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="149" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1590340321010" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1589572254275">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1589572254275" />
     <state x="450" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589483018447">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
