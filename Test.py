@@ -1,5 +1,10 @@
-a = 2.5238933482398
-b = 0.05
+actual_price = 2.5238933482398
+depth_ps = 15
+min_price_increment = 0.05
 
-c = (a//b)*b
-print(c)
+
+price_for_put = ((actual_price * (100 - depth_ps) / 100) // min_price_increment)\
+                * min_price_increment
+
+
+print(price_for_put)

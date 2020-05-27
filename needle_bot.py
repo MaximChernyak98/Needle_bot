@@ -16,6 +16,7 @@ client = openapi.api_client(token)
 class ShareToFish:
     actual_price = 0
     min_price_increment = 0
+    price_for_put = 0
 
     def __init__(self, figi, current_price):
         self.figi = figi
@@ -29,28 +30,29 @@ class ShareToFish:
         return share_dict
 
     def put_limit_order_needle(self, depth_ps):
-        price_for_put = (self.actual_price * (
-                    100 - depth_ps) / 100) // self.min_price_increment * self.min_price_increment
+        self.price_for_put = ((self.actual_price * (100 - depth_ps) / 100) // self.min_price_increment)\
+                             * self.min_price_increment
         order_response = client.orders.orders_limit_order_post(broker_account_id=2010122667,
                                                                figi=self.figi,
                                                                limit_order_request={"lots": 1,
                                                                                     "operation": "Buy",
-                                                                                    "price": price_for_put})
-        return order_response
+                                                                                    "price": self.price_for_put})
 
 
 UNPRO = ShareToFish(figi='BBG004S686W0', current_price=0)
-debug = True
+debug = False
 now = datetime.datetime(2020, 5, 26, 18, 23) if debug else datetime.datetime.now()
+now = now.replace(second=0, microsecond=0)
 now_time = timezone('Europe/Moscow').localize(now)
 
-
+a = UNPRO.get_actual_price(now_time=now_time, time_frame="1min")
 UNPRO.actual_price = UNPRO.get_actual_price(now_time=now_time, time_frame="1min").payload.candles[0].l
-#a = UNPRO.put_limit_order_needle(15)
+a = UNPRO.put_limit_order_needle(15)
 
 print(UNPRO.actual_price)
 print(UNPRO.min_price_increment)
-#print(a)
+print(UNPRO.price_for_put)
+
 
 # t_to = datetime.datetime(2020, 5, 26, 18, 24, tzinfo=timezone('Europe/Moscow')) - datetime.timedelta(minutes=30)
 #
